@@ -19,6 +19,7 @@ private
       user.provider = @omniauth[:provider]
       user.uid = @omniauth[:uid]
       user.username = @omniauth[:info][:nickname]
+      user.save!
     end
   end
 
